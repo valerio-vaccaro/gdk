@@ -22,12 +22,13 @@ For Mac OSX:
 Install Xcode and brew if not installed, then
 
 ```
-brew update && brew install ninja automake autoconf libtool gnu-sed python3 wget pkg-config swig (optional) gnu-getopt gnu-tar
+brew update && brew install ninja automake autoconf libtool gnu-sed python3 wget pkg-config gnu-getopt gnu-tar
+brew install swig@3 #optional
 pip3 install --user meson
 xcode-select --install
 ```
 
-You may also need to change your PATH environment variable to add $HOME/Library/Python/3.6/bin
+You may also need to change your PATH environment variable to add $HOME/Library/Python/3.6/bin (if you use MacOs Python package you will need to install certificates using the following command `Macintosh HD > Applications > Python3.6 folder (or whatever version of python you're using) > Install Certificates.command`
 
 If you want to target Android you will need to download the NDK and set the ANDROID_NDK env variable to the directory you uncompress it to, for example
 
